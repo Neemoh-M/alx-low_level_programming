@@ -6,7 +6,8 @@
  */
 
 int main(void)
-{	char acharacter;
+{	
+	char acharacter;
 	int ainteger;
 	long along;
 	long long alonglong;
