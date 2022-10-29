@@ -4,15 +4,17 @@
 /**
  * rot13 - encodes characters in rot13
  * @str: the string to be encoded
- * @Return: the rot13 values
+ * Return: the rot13 values
  */
 
 char *rot13(char *str)
 {
-	char ori[] = ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz;
-	char new[] = NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm;
 	int m;
 	int n;
+
+	char ori[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char new[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
 
 	while (*str != '\0')
 	{
@@ -28,5 +30,5 @@ char *rot13(char *str)
 		}
 		str++;
 	}
-return (str);
+	return (str);
 }
