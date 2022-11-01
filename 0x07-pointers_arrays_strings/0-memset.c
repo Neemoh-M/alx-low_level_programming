@@ -1,28 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * mem-set - finds a constant
- * @i - integer
- * simple_print_buffer - prints constant
- * Return: 0
+ * _memset - Fill memory with a constant byte
+ * @s: memory area to fill
+ * @b: constant byte to fill
+ * @n: bytes of memory area to fill
+ *
+ * Return: the memory area filled
  */
-void simple_print_buffer(char *buffer, unsigned int size)
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int a;
 
-	i = 0;
-	while (i < size)
+	for (a = 0; a < n; a++)
 	{
-		if (i % 10)
-		{
-			printf(" ");
-		}
-		if (!(i % 10) && i)
-		{
-			printf("\n");
-		}
-		printf("0x%02x", buffer[i]);
-		i++;
+	s[a] = b;
 	}
-	printf("\n");
+	return (s);
 }
